@@ -1,0 +1,219 @@
+:root {
+    --gray: gray;
+}
+
+*,
+*:after,
+*::before {
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: var(--gray);
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+    background-color: black;
+    opacity: 0.9;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    /* min-height: 69px; */
+    /* height: auto; */
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+}
+
+.menu {
+    display: flex;
+    margin-right: 10px;
+    min-width: 300px;
+    justify-content: space-between;
+}
+
+.menu-item {
+    list-style: none;
+    font-size: 18px;
+}
+
+.menu-item a {
+    color: var(--gray);
+}
+
+main {
+    text-align: center;
+    width: 100%;
+    flex-grow: 1;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.jumbatron {
+    position: relative;
+    height: 50vmin;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.jumbatron img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+.resize-text {
+    position: inherit;
+    z-index: 2;
+    background-color: black;
+    width: 100%;
+    padding: 12px 0 15px;
+}
+
+.resize-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.resize-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/*when resized*/
+@media (max-width: 1200px) {
+    .resize-text {
+        padding: 1.5vw 0 1.8vw;
+    }
+
+    .resize-title {
+        font-size: 3.5vw;
+        margin-bottom: 1.2vw;
+    }
+
+    .resize-subtitle {
+        font-size: 1.7vw;
+    }
+}
+
+.tea-month, .locations-container {
+    margin: 40px 0;
+}
+
+.cards {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: space-between; */
+    gap: 20px;
+}
+
+.card {
+    display: block;
+    width: 300px;
+    flex-grow: 1;
+    /* height: 200px; */
+    /* margin: 0 10px 30px; */
+}
+
+/* @media (max-width: 1200px) {
+    .card {
+        width: 30vw;
+        height: 20vw;
+    }
+} */
+
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.locations-container {
+    max-height: 700px;
+
+    position: relative;
+    /* height: 50vmin; */
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.locations-container img {
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+.transparent {
+    background-color: unset;
+}
+
+.locations {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.location {
+    background-color: black;
+    width: 300px;
+}
+
+.location p {
+    line-height: 2.5;
+}
+
+.copyright {
+    margin: 20px;
+    font-size: 18px;
+}
