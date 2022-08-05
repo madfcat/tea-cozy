@@ -34,8 +34,6 @@ body {
 
 nav {
     display: flex;
-    /* min-height: 69px; */
-    /* height: auto; */
     justify-content: space-between;
     align-items: center;
     align-content: center;
@@ -157,7 +155,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* align-items: space-between; */
     gap: 25px;
 }
 
@@ -180,9 +177,7 @@ main {
 
 .locations-container {
     max-height: 700px;
-
     position: relative;
-    /* height: 50vmin; */
     width: auto;
     overflow: hidden;
     display: flex;
